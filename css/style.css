@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+}
+#vidbg{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index:-1;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+a{
+    text-decoration: white;
+    color: white;
+}
+.pagetitle{
+    color: white;
+}
+nav{
+    display: flex;
+    background-color: #AB3428;
+    justify-content: space-around;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+.links a{
+    margin-left: 1vw;
+}
+.icon{
+    background: url(../images/sprite3.png) no-repeat;
+    width: 66px;
+    height: 66px;
+    display: inline-block;
+}
+#fb{
+    background-position: 67.331% 51.957%;
+}
+#twt{
+    background-position: 10.138% 25.623%;
+}
+#insta{
+    background-position: 44.479% 78.648%;
+}
+#yt{
+    background-position: 67.331% 78.648%;
+}
+
+@media screen and (max-width: 600px) {
+    nav{
+        position: relative;
+        background-color: #812820;
+    }
+    .pagetitle{
+        background-color: #ce4f43;
+    }
+    .links{
+        display: none;
+        z-index: 1;
+        position: absolute;
+        background-color: #F5EE9E;
+        min-width: 100vw;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    .links a{
+        color: black;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        display: block;
+    }
+    .links a:hover {background-color: white;}
+    nav:hover .links{display: block;}
+    nav:hover .pagetitle{background-color: #dad38b}
+}
