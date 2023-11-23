@@ -1,3 +1,6 @@
+ @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
 *{
     margin: 0;
 }
@@ -48,7 +51,25 @@ nav{
 #yt{
     background-position: 67.331% 78.648%;
 }
+.bannerhead{
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    margin: 5vw;
+    font-size: 40pt;
+    font-weight: 500;
+}
+article{
+    color: white;
+    margin-left: 5vw;
+    margin-bottom: 5.7vw;
+    font-family: 'Manrope', sans-serif;
 
+}
+footer{
+    position: relative;
+    bottom: 0vw;
+    background-color: #AB3428;
+}
 @media screen and (max-width: 600px) {
     nav{
         position: relative;
